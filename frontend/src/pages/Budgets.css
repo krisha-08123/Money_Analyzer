@@ -1,0 +1,31 @@
+.budgets-page { max-width: 1000px; }
+
+.budget-summary-bar {
+  display: flex;
+  align-items: center;
+  padding: 20px 28px;
+  gap: 0;
+}
+.bsb-item { flex: 1; display: flex; flex-direction: column; gap: 6px; padding: 0 20px; }
+.bsb-item:first-child { padding-left: 0; }
+.bsb-div { width: 1px; height: 40px; background: var(--border-1); flex-shrink: 0; }
+
+.budgets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.budget-card { }
+.budget-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.budget-amounts { margin-bottom: 12px; display: flex; align-items: baseline; }
+
+@media (max-width: 640px) {
+  .budget-summary-bar { flex-direction: column; align-items: flex-start; gap: 14px; padding: 18px; }
+  .bsb-item { padding: 0; }
+  .bsb-div { display: none; }
+}
