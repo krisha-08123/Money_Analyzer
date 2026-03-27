@@ -1,0 +1,21 @@
+body{
+margin:0;
+font-family:Poppins, sans-serif;
+background:#f1f5f9;
+}
+
+button{
+cursor:pointer;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gradient{
+background:linear-gradient(135deg,#7c3aed,#ec4899,#06b6d4);
+color:white;
+}
